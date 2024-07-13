@@ -33,3 +33,6 @@ class Cook:
 
         self.round_type = round_type
         self.elimination = elimination
+
+
+
