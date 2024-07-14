@@ -5,7 +5,7 @@ import argparse
 from pathlib import Path
 import logging
 
-logger = logging.getLogger('logs')
+logger = logging.getLogger("logs")
 logger.setLevel(logging.DEBUG)
 
 ch_logs = logging.StreamHandler()
@@ -13,11 +13,11 @@ ch_logs.setLevel(logging.INFO)
 logger.addHandler(ch_logs)
 
 parser = argparse.ArgumentParser(
-                    prog='get_subtitles',
-                    description='gets the subtitles for a given series of Masterchef from subsaga.com',
-                    )
+    prog="get_subtitles",
+    description="gets the subtitles for a given series of Masterchef from subsaga.com",
+)
 
-parser.add_argument('series', type=str)
+parser.add_argument("series", type=str)
 
 args = parser.parse_args()
 
